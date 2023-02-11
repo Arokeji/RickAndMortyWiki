@@ -2,6 +2,8 @@ let allSeasonsHTML = '';
 
 function renderSeasons() {
 
+    allSeasonsHTML = '';
+
     mainContainer.innerHTML = '' 
         + getSectionBlock("TEMPORADAS");
     
