@@ -1,0 +1,58 @@
+.navigation {
+    padding: 25px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    margin: 0px auto;
+    
+    @include adaptTo('desktop-m'){
+        flex-direction: row;
+        background-color: $color-14;
+        margin-top: 72px;
+    }
+
+    @include adaptTo('desktop-l'){
+        flex-direction: row;
+        background-color: $color-14;
+        margin-top: 72px;
+    }
+
+    @include adaptTo('desktop-xl'){
+        flex-direction: row;
+        background-color: $color-14;
+        margin-top: 72px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        margin: 25px auto;
+        border: none;
+        background-color: $color-6;
+        color: $color-3;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 300px;
+        min-width: 280px;
+        min-height: 150px;
+        cursor: pointer;
+
+        @include adaptTo('tablet'){
+            min-width: 500px;
+            min-height: 150px;
+            font-size: 32px;
+        }
+
+        @include adaptTo('desktop-l'){
+            font-size: 32px;
+            min-width: 350px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            font-size: 32px;
+            min-width: 350px;
+        }
+
+    }
+}

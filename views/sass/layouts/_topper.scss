@@ -1,0 +1,39 @@
+.topper {
+    padding: 5px;
+    background-color: $color-15;
+    color: $color-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    margin: 0px auto;
+
+    @include adaptTo('desktop-xl'){
+        max-width: 1280px;
+    }
+
+    &__arrow {
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    &__mini-title {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 10px;
+    }
+
+    &__space {
+        min-width: 25px;
+    }
+}

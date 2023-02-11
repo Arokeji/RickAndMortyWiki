@@ -1,0 +1,17 @@
+.section {
+    background-color: $color-5;
+    color: $color-15;
+    padding: 8px;
+    margin: 0px auto;
+    
+    @include adaptTo('desktop-xl'){
+    border-radius: 0px 0px 20px 20px;
+    max-width: 1280px;
+    }
+
+    &__name {
+        font-weight: 700;
+        text-align: center;
+    }
+    
+}

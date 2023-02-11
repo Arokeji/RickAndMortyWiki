@@ -1,0 +1,138 @@
+.locations {
+    background-color: $color-12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+
+    @include adaptTo('tablet'){
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include adaptTo('desktop-m'){
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include adaptTo('desktop-l'){
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include adaptTo('desktop-xl'){
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        max-width: 1440px;
+    }
+
+    &__card {
+        background-color: $color-1;
+        border-radius: 20px;
+        box-shadow: 0px 5px 5px $color-16;
+        padding: 20px 10px 25px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0px 15px 0px;
+        min-width: 300px;
+        max-width: 300px;
+
+        @include adaptTo('tablet'){
+            margin: 20px 10px;
+            min-width: 350px;
+            max-width: 350px;
+        }
+
+        @include adaptTo('desktop-m'){
+            margin: 20px 5px;
+            min-width: 320px;
+            max-width: 320px;
+        }
+
+        @include adaptTo('desktop-l'){
+            margin: 20px 5px;
+            min-width: 400px;
+            max-width: 400px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            margin: 20px 5px;
+            min-width: 400px;
+            max-width: 400px;
+        }
+    }
+
+    &__name {
+        background-color: $color-13;
+        border-radius: 20px;
+        height: 55px;
+        color: $color-15;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__duo {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    &__block {
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: 12px;
+        font-size: 10px;
+        font-weight: 700;
+        color: $color-16;
+    }
+
+    &__result {
+        
+    }
+
+    &__spacer {
+        border-left: 1px solid $color-16;
+        height: 25px;
+        display: flex;
+        align-self: center;
+    }
+
+    &__item{
+        width: 100%;
+        border-radius: 20px;
+        background-color: $color-6;
+        font-size: 12px;
+        font-weight: 700;
+        color: $color-15;
+        padding: 2px;
+        margin: 4px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        @include adaptTo('tablet'){
+            margin: 6px;
+        }
+
+        @include adaptTo('desktop-m'){
+            margin: 6px;
+        }
+
+        @include adaptTo('desktop-l'){
+            margin: 6px;
+        }
+    }
+}

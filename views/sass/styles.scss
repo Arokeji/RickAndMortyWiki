@@ -1,0 +1,29 @@
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'base/typo';
+@import 'base/reset';
+@import 'layouts/footer';
+@import 'layouts/main';
+@import 'layouts/header';
+@import 'layouts/topper';
+@import 'layouts/intro';
+@import 'layouts/search';
+@import 'layouts/section-home';
+@import 'layouts/nav';
+@import 'layouts/section';
+@import 'layouts/load';
+@import 'components/card-characters';
+@import 'components/card-character';
+@import 'components/card-episodes';
+@import 'components/card-episode';
+@import 'components/card-locations';
+@import 'components/card-location';
+@import 'components/detail';
+@import 'components/status';
+
+
+body {
+    background-color: $color-12;
+    color: $color-2;
+    height: 100vh;
+}

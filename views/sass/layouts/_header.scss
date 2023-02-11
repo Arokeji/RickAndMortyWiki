@@ -1,0 +1,69 @@
+.header {
+    text-align: center;
+    height: 70px;
+    justify-content: center;
+    background: url('../../../assets/images/title-background.png') no-repeat center;
+    height: 714px;
+    padding-top: 105px;
+    max-width: 1320px;
+    margin: 0px auto;
+
+    @include adaptTo('tablet'){
+        padding-top: 85px;
+    }
+
+    @include adaptTo('desktop-l'){
+        padding-top: 100px;
+    }
+
+    @include adaptTo('desktop-xl'){
+        padding-top: 125px;
+        border-radius: 0px 0px 20px 20px;
+        background-size:cover;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $color-1;
+        text-decoration: underline;
+        line-height: 35px;
+
+        @include adaptTo('tablet'){
+            font-size: 45px;
+        }
+
+        @include adaptTo('desktop-m'){
+            font-size: 60px;
+        }
+
+        @include adaptTo('desktop-l'){
+            font-size: 60px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            font-size: 60px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 28px;
+        color: $color-1;
+        font-weight: 700;
+
+        @include adaptTo('tablet'){
+            font-size: 33px;
+        }
+
+        @include adaptTo('desktop-m'){
+            font-size: 50px;
+        }
+
+        @include adaptTo('desktop-l'){
+            font-size: 50px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            font-size: 50px;
+        }
+    }
+}

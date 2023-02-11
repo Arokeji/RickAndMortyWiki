@@ -1,0 +1,48 @@
+.search {
+    box-shadow: 0px 3px 5px $color-10;
+    margin: 30px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 27px;
+    background-color: $color-1;
+
+    @include adaptTo('tablet'){
+        max-width: 700px;
+        margin: 30px auto;
+    }
+
+    @include adaptTo('desktop-m'){
+        max-width: 700px;
+        margin: 30px auto;
+    }
+
+    @include adaptTo('desktop-l'){
+        max-width: 700px;
+        margin: 30px auto;
+    }
+
+    @include adaptTo('desktop-xl'){
+        max-width: 700px;
+        margin: 30px auto;
+    }
+
+    &__glass{
+        color: $color-15;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    &__input {
+        font-size: 18px;
+        color: $color-15;
+        width: 100%;
+        border: none;
+        border-left: 2px solid $color-9;
+        padding-left: 12px;
+        margin-left: 12px;
+        outline: none;
+        height: 22px;
+    }
+}

@@ -1,0 +1,274 @@
+.character {
+    display: flex;
+    flex-direction: column;
+
+    @include adaptTo('tablet'){
+        flex-direction: row;
+    }
+
+    @include adaptTo('desktop-m'){
+        flex-direction: row;
+        min-height: 530px;
+    }
+
+    @include adaptTo('desktop-l'){
+        flex-direction: row;
+        min-height: 530px;
+        margin: 60px auto;
+        background-color: $color-1;
+        box-shadow: 0px 5px 3px $color-16;    
+        max-width: 1024px;
+    }
+
+    @include adaptTo('desktop-xl'){
+        flex-direction: row;
+        min-height: 530px;
+        margin: 60px auto;
+        background-color: $color-1;
+        box-shadow: 0px 5px 3px $color-16;     
+        max-width: 1024px;
+    }
+
+    //Imagen
+    
+    &__profile {
+        margin: 0px auto;
+
+        @include adaptTo('tablet'){
+            display: flex;
+            flex-direction: column;
+            min-width: 25%;
+            align-items: center;
+            margin: 10px;
+        }
+
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: column;
+            min-width: 25%;
+            align-items: center;
+            margin: 50px 10px;
+        }
+
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: column;
+            min-width: 25%;
+            align-items: center;
+            margin: 0px 10px;
+            padding: 0px;
+            justify-content: center;
+        }
+
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: column;
+            min-width: 25%;
+            align-items: center;
+            margin: 0px 10px;
+            padding: 0px;
+            justify-content: center;
+        }
+
+    }
+
+    &__image {
+        min-width: 204px;
+        max-width: 204px;
+        min-height: 200px;
+        max-height: 200px;
+        margin-top: 20px;
+    }
+
+    &__picture {
+        min-width: 204px;
+        max-width: 204px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 100%;
+        border: 4px solid $color-5;
+    }
+
+    &__name {
+        color: $color-15;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0px 20px 0px 20px;
+        border-bottom: 2px solid $color-15;
+        text-align: center;
+
+        @include adaptTo('tablet'){
+            width: fit-content;
+            padding: 0px 8px;
+        }
+
+        @include adaptTo('desktop-m'){
+            width: fit-content;
+            padding: 0px 8px;
+        }
+
+        @include adaptTo('desktop-l'){
+            width: fit-content;
+            padding: 0px 8px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            width: fit-content;
+            padding: 0px 8px;
+        }
+    }
+
+
+    
+    //Detalles
+
+    &__info-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include adaptTo('tablet'){
+            background-color: $color-1;
+        }
+
+        @include adaptTo('desktop-m'){
+            background-color: $color-1;
+            padding-top: 50px;
+        }
+
+        @include adaptTo('desktop-l'){
+            background-color: $color-1;
+            justify-content: center;
+        }
+
+        @include adaptTo('desktop-xl'){
+            background-color: $color-1;
+            justify-content: center;
+        }
+    }
+
+    &__information {
+        padding: 20px;
+        min-width: 100%;
+
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: column;
+            padding: 70px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: column;
+            padding: 70px;
+        }
+    }
+
+
+    &__details-container {
+
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__detail {
+        @include adaptTo('desktop-m'){
+            width: 30%;
+        }
+
+        @include adaptTo('desktop-l'){
+            width: 30%;
+        }
+
+        @include adaptTo('desktop-xl'){
+            width: 30%;
+        }
+
+    }
+
+    &__category-text {
+        font-size: 14px;
+        font-weight: 700;
+        color: $color-16;
+        margin: 10px 0px 0px 0px;
+    }
+
+    &__status-result {
+        display: flex;
+    }
+
+    &__status {
+        font-size: 14px;
+        background-color: $color-13;
+        padding: 5px 17px;
+        border-radius: 30px;
+        margin: 0px 5px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        background-color: $color-13;
+        padding: 5px 20px;
+        border-radius: 0px 30px 30px 0px;
+
+        @include adaptTo('desktop-m'){
+            border-radius: 30px;
+        }
+
+        @include adaptTo('desktop-l'){
+            border-radius: 30px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            border-radius: 30px;
+        }
+    }
+
+    &__episodes-category {
+        font-size: 14px;
+        font-weight: 700;
+        color: $color-16;
+        margin: 10px 0px 0px 0px;
+    }
+
+    &__episodes-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__episode {
+        display: flex;
+        background-color: $color-6;
+        font-size: 18px;
+        color: $color-15;
+        border-radius: 30px;
+        width: 50px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        cursor: pointer;
+    }
+}

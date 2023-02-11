@@ -1,0 +1,129 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+
+    @include adaptTo('tablet'){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 768px;
+    }
+
+    @include adaptTo('desktop-m'){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 1024px;
+    }
+
+    @include adaptTo('desktop-l'){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 1280px;
+    }
+
+    @include adaptTo('desktop-xl'){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 1280px;
+    }
+
+    &__item {
+        margin: 10px 13px;
+        box-shadow: 0px 3px 5px $color-16;
+        border-radius: 20px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 300px;
+
+        @include adaptTo('tablet'){
+            width: 350px;
+        }
+
+        @include adaptTo('desktop-m'){
+            width: calc(33% - 26px);
+        }
+
+        @include adaptTo('desktop-l'){  
+            width: 400px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            width: 400px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        color: $color-15;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: $color-1;
+        font-size: 10px;
+        width: 69px;
+        height: 21px;
+    }
+
+    &__details {
+        display: flex;
+    }
+
+    &__image {
+        width: 136px;
+        height: 132px;
+    }
+
+    &__picture {
+        max-width: 136px;
+        max-height: 132px;
+    }
+
+    &__information {
+        padding-left: 18px;
+    }
+
+    &__title {
+        font-size: 10px;
+        font-weight: 700;
+        color: $color-16;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 18px
+    }
+
+    &__more {
+        background-color: $color-6;
+        border: none;
+        color: $color-15;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    &__more-text {
+        font-weight: 700;
+        font-size: 12px;
+        text-align: center;
+    }
+}

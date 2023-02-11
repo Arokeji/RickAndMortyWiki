@@ -1,0 +1,259 @@
+.episode{
+    background-color: $color-12;
+
+    &__card{
+        background-color: $color-1;
+        padding: 30px 20px;
+        width: 100%;
+        
+
+        @include adaptTo('tablet'){
+            padding: 0px;
+            display: flex;
+        }
+
+        @include adaptTo('desktop-m'){
+            padding: 0px;
+            display: flex;
+        }
+
+        @include adaptTo('desktop-l'){
+            padding: 0px;
+            display: flex;
+            max-width: 1024px;
+            margin:55px auto;
+            box-shadow: 0px 5px 3px $color-16;     
+
+        }
+
+        @include adaptTo('desktop-xl'){
+            padding: 0px;
+            display: flex;
+            max-width: 1024px;
+            margin:55px auto;
+            box-shadow: 0px 5px 3px $color-16;     
+
+        }
+    }
+
+    &__name{
+        color: $color-15;
+        background-color: $color-13;
+        font-weight: 700;
+        font-size: 20px;
+        justify-items: center;
+        min-width: 100%;
+        padding: 18px 0px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        @include adaptTo('tablet'){
+            border-radius: 0px;
+            max-width: 284px;
+            min-width: 284px;
+            min-height: 530px;
+            font-size: 40px;
+            align-items: center;
+            text-align: center;
+        }
+
+        @include adaptTo('desktop-m'){
+            border-radius: 0px;
+            max-width: 284px;
+            min-width: 284px;
+            min-height: 530px;
+            font-size: 40px;
+            align-items: center;
+            text-align: center;
+        }
+
+        @include adaptTo('desktop-l'){
+            border-radius: 0px;
+            max-width: 284px;
+            min-width: 284px;
+            min-height: 530px;
+            font-size: 40px;
+            align-items: center;
+            text-align: center;
+            background-color: $color-1;
+        }
+
+        @include adaptTo('desktop-xl'){
+            border-radius: 0px;
+            max-width: 284px;
+            min-width: 284px;
+            min-height: 530px;
+            font-size: 40px;
+            align-items: center;
+            text-align: center;
+            background-color: $color-1;
+        }
+    }
+
+    &__spacer {
+        @include adaptTo('desktop-l'){
+            border-right: 3px solid $color-5;
+            height: 120px;
+            align-self: center;
+        }
+
+        @include adaptTo('desktop-xl'){
+            border-right: 3px solid $color-5;
+            height: 120px;
+            align-self: center;
+        }
+    }
+
+    &__info {
+        margin-top: 28px;
+        width: 100%;
+
+        @include adaptTo('tablet'){
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            justify-content: center;
+        }
+
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            justify-content: center;
+        }
+
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            justify-content: center;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__details-container{
+        
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: column;
+            min-width: 48%;
+        }
+
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: column;
+            min-width: 48%;
+        }
+
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: column;
+            min-width: 48%;
+        }
+    }
+
+    &__header {
+        font-size: 14px;
+        font-weight: 700;
+        color: $color-16;
+        margin: 10px 0px 5px 0px;
+    }
+
+    &__detail{
+        font-size: 18px;
+        background-color: $color-13;
+        padding: 5px 20px;
+        border-radius: 0px 30px 30px 0px;
+
+        @include adaptTo('desktop-m'){
+            border-radius: 30px;
+        }
+
+        @include adaptTo('desktop-l'){
+            border-radius: 30px;
+        }
+
+        @include adaptTo('desktop-xl'){
+            border-radius: 30px;
+        }
+    }
+
+    //Characters featured
+
+    &__characters-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 20px 0px;
+
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+
+    &__characters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__profile{
+        max-width: 90px;
+        max-height: 90px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    &__image{
+        max-width: 90px;
+        max-height: 90px;
+        border-radius: 100%;
+        border: 2px solid $color-5;
+    }
+
+}
