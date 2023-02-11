@@ -3,6 +3,8 @@ let allLocationsHTML = '';
 
 async function renderLocations(page, locationsFound) {
 
+    allLocationsHTML = '';
+
     mainContainer.innerHTML = '' 
         + getSectionBlock("BUSCADOR DE LOCALIZACIONES")
         + searchLocationBlock;
