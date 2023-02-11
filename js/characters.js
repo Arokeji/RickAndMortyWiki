@@ -2,6 +2,7 @@ let charactersCurrentPage = 1;
 let allCardsHTML = '';
 
 function renderCharacters(page, charactersFound) {
+    allCardsHTML = '';
 
     mainContainer.innerHTML = '' 
         + getSectionBlock("BUSCADOR DE PERSONAJES")
